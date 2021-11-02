@@ -1,0 +1,73 @@
+.sectionC{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    grid-column: span 2;
+    grid-row: span 2;
+    justify-items: center;
+  }
+  .neon {
+     color: #ffffff;
+     text-shadow: 0 0 8px #2cd0f0, 0 0 2px #2cd0f0, 0 0 10px #2cd0f0,
+       0 0 6px #2cd0f0, 0 0 20px #2cd0f0, 0 0 20px #2cd0f0, 0 0 1px #2cd0f0,
+       0 0 12px #2cd0f0;
+     margin-left: 90px;
+     margin-top: 40px;
+  }
+  p {
+    margin-bottom: 5px;
+  }
+  .product_container {
+   display: flex;
+    margin-top: 80px;
+    margin-left: 150px;
+    margin-right: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-items: center;
+  }
+  
+  .pdec {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+    transition: all 300ms;
+    opacity: 80%;
+  }
+  section img:hover {
+    transform: scale(1.2);
+    transition: all 300ms;
+    opacity: 100%;
+  }
+  h3 {
+    font-family: 'Big Shoulders Stencil Display', cursive;
+  }
+  .product {
+    width: 220px;
+    height: 300px;
+    background-color: rgba(127, 255, 212, 0.281);
+    border-radius: 20px;
+    text-align: center;
+  }
+  .buttonC {
+    padding: 5px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background: #ff96ad;
+    box-shadow: 0 0 5px #ff96ad, 0 0 25px #ff96ad, 0 0 50px #ff96ad,
+      0 0 200px #ff96ad;
+    border-radius: 10px;
+    transition: box-shadow 600ms;
+    text-decoration: none;
+  }
+  
+.buttonC:hover {
+    box-shadow: 0 0 5px #eb7790, 0 0 25px #eb7790, 0 0 50px #eb7790,
+      0 0 200px #eb7790;
+  }
+  
+  

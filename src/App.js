@@ -1,25 +1,62 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import logo from './assets/Logotransparente.png'
+import baner from './assets/led.jpg'
+import './App.css'
+import Nav from './nav'
+import Iconos from './iconos'
+import ContainerCards from './ContainerCardsHome'
+import Catalogo from './Catalogo' 
+import Blog from './Blog'
+import Footer from './Footer'
+import { 
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom"
+import Producto from './Producto'
+import NoticiasInfo from './NoticiaInfo'
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router>
+    <body className="stars">
+       <header>
+        <div>
+          <img src={logo} className="logo" alt="logo" />
+          <Nav/>
+        </div>
+        <img src={baner} className="baner" alt="logo" />
+       </header>
+         <Iconos/>
+       <main>
+         <Switch>
+         <Route exact path="/">
+             <Redirect to ="/home"/>
+           </Route>
+           <Route path="/producto/:id">
+             <Producto/>
+           </Route>
+           <Route path="/blog/:id">
+             <NoticiasInfo/>
+           </Route>
+           <Route  path="/home">
+             <ContainerCards/>
+           </Route>
+           <Route path="/Catalogo">
+             <Catalogo/>
+           </Route>
+           <Route path="/Blog">
+             <Blog/>
+           </Route>
+         </Switch>
+      </main>
+      <Footer/>
+    </body>
+    </Router>
+  )
 }
 
 export default App;

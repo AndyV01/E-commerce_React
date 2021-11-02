@@ -1,38 +1,435 @@
-.App {
-  text-align: center;
+
+@font-face {
+  font-family: "Staatliches", "lato";
+  src: url("https://fonts.googleapis.com/css2?family=Lato&family=Staatliches&display=swap");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 220vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr;
+  grid-template-rows: 2fr 6fr 3fr;
+  gap: 10px 10px;
+  background-color: black;
+}
+.stars {
+  background: #000
+    url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top
+    center;
+  z-index: 0; 
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+header {
+  display: grid;
+  grid-column: span 4;
+  grid-row: 1;
+  justify-items: center;
+  align-items: center;
+  position: relative;
+}
+header > div {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  position: absolute;
+}
+.baner{
+  opacity: 50%;
+  border-radius: 20px;
+   width: 60%;
+  z-index: 0;
+}
+.logo {
+  height: 200px;
+  opacity: 90%;
+  z-index: 2;
+  margin-bottom: 50px;
+  animation-name: logo;
+  animation-duration: 4s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.nav-button {
+  background-color: rgba(127, 255, 212, 0.226);
+  border-radius: 5px;
+  color: white;
+  text-decoration: transparent;
+  cursor: pointer;
+}
+nav > ul {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 20px;
+  
+}
+
+nav a:hover {
+  background: #ff96ad;
+  box-shadow: 0 0 5px #ff96ad, 0 0 25px #ff96ad, 0 0 50px #ff96ad,
+    0 0 200px #ff96ad;
+
+}
+
+nav {
+  gap: 10px;
+  z-index: 1;
+  align-items: center;
+}
+
+@keyframes logo {
+  0% {
+    height: 2rem;
+  }
+  100% {
+    height: 15rem;
   }
 }
+.login {
+  opacity: 0;
+  visibility: hidden;
+  transform: scaleY(0);
+  transform-origin: 0% 0%;
+  transition: all 0.35s;
+  position: fixed;
+  bottom: 410px;
+  right: 110px;
+  height: 50px;
+  z-index: 2;
+ 
+}
+span:hover > .login {
+  visibility: visible;
+  opacity: 1;
+  transform: scaleY(1);
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.button-login {
+  margin-top: 7px;
+  border-radius: 10px;
+  width: 130px;
+}
+
+.user {
+  cursor: pointer;
+  position: fixed;
+  bottom: 410px;
+  right: 50px;
+  height: 50px;
+  z-index: 2;
+
+}
+.add {
+  position: fixed;
+  bottom: 270px;
+  right: 50px;
+  height: 50px;
+  z-index: 2;
+}
+.wapp {
+  position: fixed;
+  bottom: 340px;
+  right: 50px;
+  height: 45px;
+  z-index: 2;
+}
+main {
+  display: grid;
+  grid-column: span 4;
+  grid-row: 2;
+  background-color: rgba(252, 48, 208, 0.178);
+  border-radius: 20px;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 3fr 2fr;
+}
+
+.container__card {
+  grid-column: span 2;
+  grid-row: span 2;
+  max-height: 40%;
+  margin: auto;
+  margin-top: 100px;
+  perspective: 1000px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+}
+
+.card__father {
+  margin: 20px;
+  perspective: 1000px;
+  -webkit-box-reflect: below 10px
+    linear-gradient(transparent, transparent, rgba(0, 0, 0, 0.3));
+}
+
+.card__father:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card {
+  width: 35vw;
+  height: 45vh;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 600ms;
+}
+.card__front1,
+.card__front2,
+.card__front3,
+.card__back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  border-radius: 20px;
+}
+
+.card__front1 {
+  background-image: url(./assets/FOTO-4_web.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.card__front2 {
+  background-image: url(./assets/17631.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.card__front3 {
+  background-image: url(./assets/descarga.jfif );
+  background-size: cover;
+  background-position: center;
+} 
+.card__back {
+  transform: rotateY(180deg);
+  background-image: url(./assets/13834732743_002376e2bf_b.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.body__card_front {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transform: translateZ(60px);
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+}
+
+.body__card_back {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  text-align: center;
+  transform: translateZ(60px);
+  margin-top: 15px;
+  justify-items: center;
+  align-items: center;
+}
+
+.body__card_back p {
+  margin: 15px;
+  font-size: 18px;
+  flex-wrap: wrap;
+}
+
+.body__card_back button {
+  padding: 10px 40px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  background: #ff96ad;
+  box-shadow: 0 0 5px #ff96ad, 0 0 25px #ff96ad, 0 0 50px #ff96ad,
+    0 0 200px #ff96ad;
+  border-radius: 10px;
+  transition: box-shadow 600ms;
+}
+
+.body__card_back button:hover {
+  box-shadow: 0 0 5px #eb7790, 0 0 25px #eb7790, 0 0 50px #eb7790,
+    0 0 200px #eb7790;
+}
+
+.p {
+  font-family: 'Lato', sans-serif;
+  color: #000;
+}
+
+footer {
+  display: grid;
+  grid-column: span 4;
+  grid-row: 3;
+  background-color: rgba(250, 79, 241, 0.123);
+  border-radius: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+footer div {
+  display: grid;
+  justify-items: center;
+  margin: 0px 15px;
+  align-content: center;
+}
+.divimg {
+  height: 100px;
+  opacity: 100%;
+  margin-top: 10px;
+  border-radius: 0;
+}
+footer p {
+  font-family: 'Roboto';
+  align-items: center;
+  text-align: center;
+}
+h3 {
+  border-bottom: 1px solid white;
+  color: rgb(182, 170, 170);
+  margin: 15px 0px;
+}
+.button {
+  padding: 3px 55px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  height: 80%;
+  width: 200px;
+  border-radius: 20px;
+  font-family: "Staatliches", cursive;
+}
+form {
+  display: grid;
+  justify-items: center;
+}
+.input {
+  margin: 3px;
+  padding: 3px 10px;
+  height: 90%;
+  width: 200px;
+  border-radius: 20px;
+}
+label {
+  margin-bottom: 10px;
+}
+center {
+  margin-bottom: 15px;
+}
+ul {
+  list-style-type: none;
+  display: list-item;
+}
+li {
+  margin: 5px 0;
+  padding: 2px 0;
+}
+li:hover {
+  transition-property: transform;
+  transform: translateX(15px);
+  transition-duration: 300ms;
+}
+footer a {
+  color: white;
+  text-decoration: transparent;
+  justify-items: center;
+  text-align: center;
+  transition-property: transform;
+  transform: translateX(10px);
+  transition-duration: 300ms;
+}
+ footer a:hover {
+  color: rgb(247, 108, 247);
+}
+button:hover {
+  background: #ff96ad;
+  box-shadow: 0 0 5px #ff96ad, 0 0 25px #ff96ad, 0 0 50px #ff96ad,
+    0 0 200px #ff96ad;
+}
+/* Source code of the footer social icons */
+.fa-facebook-square:hover {
+  color: #3b5998;
+}
+.fa-twitter-square:hover {
+  color: #55acee;
+}
+.fa-google-plus-square:hover {
+  color: #dd4b39;
+}
+.fa-linkedin-square:hover {
+  color: #0177b5;
+}
+.fa-facebook-square {
+  font-size: 172px;
+  color: gray;
+}
+.fa-twitter-square {
+  font-size: 172px;
+  color: gray;
+}
+.fa-google-plus-square {
+  font-size: 172px;
+  color: gray;
+}
+.fa-linkedin-square {
+  font-size: 172px;
+  color: gray;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 600px) {
+  body {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
   }
-  to {
-    transform: rotate(360deg);
+  header {
+    grid-column: span 2;
+    grid-row: 1;
+    height: 40vh;
+  }
+  .logo {
+    animation: none;
+    margin-bottom: 10px;
+  }
+  main {
+    grid-column: span 2;
+    grid-row: 2;
+    height: 150vh;
+  }
+  footer {
+    grid-column: span 2;
+    grid-row: 3;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  header > img {
+    display: none;
+  }
+  .secondary {
+    display: none;
   }
 }

@@ -1,0 +1,18 @@
+main button {
+    padding: 5px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    background: #ff96ad;
+    box-shadow: 0 0 5px #ff96ad, 0 0 25px #ff96ad, 0 0 50px #ff96ad,
+      0 0 200px #ff96ad;
+    border-radius: 10px;
+    transition: box-shadow 600ms;
+  }
+  
+main button:hover {
+    box-shadow: 0 0 5px #eb7790, 0 0 25px #eb7790, 0 0 50px #eb7790,
+      0 0 200px #eb7790;
+  }
+  
