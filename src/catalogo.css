@@ -7,6 +7,14 @@
     grid-row: span 2;
     justify-items: center;
   }
+  .spinner{
+    display: grid;
+    grid-column: span 2;
+    grid-row: span 2;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
   .neon {
      color: #ffffff;
      text-shadow: 0 0 8px #2cd0f0, 0 0 2px #2cd0f0, 0 0 10px #2cd0f0,

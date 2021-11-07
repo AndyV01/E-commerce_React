@@ -30,15 +30,26 @@ section {
     margin: 15px 0px;
     border-radius: 20%;
   }
+  .data{
+    display: grid;
+    text-align: center;
+    margin-right: 50px;
+    justify-items: center;
+  }
   .description {
+    width: 350px;
     height: 250px;
     margin-bottom: 20px;
     background-color: #ffffff31;
     border-radius: 20px;
     padding: 20px;
     align-items: center;
+    text-align: center;
   }
   section div {
     color: #ffffff;
     display: grid;
+  }
+  .h1{
+    margin-top: 150px;
   }

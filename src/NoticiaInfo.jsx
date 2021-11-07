@@ -3,24 +3,35 @@ import { useParams } from 'react-router'
 import Carrousel from './Carrousel'
 import Noticias from './Noticias'
 import baner from './assets/baner 2.jpg'
-import { todasLasNoticias } from './servicios/noticias'
+import useFetch from "use-http"
+import spinner from "./assets/spinner.gif"
+
 
 
 const NoticiasInfo = ()  => {
+
+    const imgUrl = 'http://localhost:4000/'
     const {id} = useParams()
-    const laNoticia = todasLasNoticias ()
+    const { loading, data } = useFetch(`http://localhost:4000/blog/${id}`, {}, [])
+    
+    if (loading) {
+        return <div className="spinner">
+        <img src={spinner} alt=""/>
+    </div>
+    }
     
     return (
         <>
-        <div>
+        <div className="section">
+        
         <h1>
-            {laNoticia.name_n}
+            {data.new.name_n}
         </h1>
-        <img class="baner" src={laNoticia.route} alt="product"/>
-        <p>
-            {laNoticia.description}
+        <img class="img2" src={imgUrl + data.new.route} alt="product"/>
+        <p className="pp">
+            {data.new.description}
         </p>
-        <img src={baner} alt=""/>
+        <img className="img" src={baner} alt=""/>
        </div>
        <Noticias/>
        <Carrousel/>

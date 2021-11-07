@@ -1,14 +1,20 @@
 import React from "react"
-import { todasLasNoticias } from './servicios/noticias'
-
+import useFetch from "use-http"
 
 
 const Noticias = ()  => {
-    const laNoticia = todasLasNoticias()
+    
+    const {loading, data, error} = useFetch("http://localhost:4000/blog", {},[])
 
+    if (error){
+        console.error(error)
+    }
+    if (loading){
+        return null
+    }
     return (
         <aside>
-        {laNoticia.map(noticia => { 
+        {data.new.map(noticia => { 
             return (
             <div className="newLink">
                 <a href={noticia.link_n}>{noticia.name_n}</a>

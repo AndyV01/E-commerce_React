@@ -1,8 +1,9 @@
 import React from 'react'
 import logo from './assets/Logotransparente.png'
-
+import FromSuscribe from "./formSuscribe"
  
 const Footer = () => {
+   
     return (
          <footer>
          <div><img className="divimg" src={logo} alt="Logo Kush"/>
@@ -57,12 +58,7 @@ const Footer = () => {
          </div>
          <div>
          <h3>SUSCRIPCION</h3>
-         <form method="POST" action="http://localhost:4000/suscribe">
-             <input className="input" required="true" type="text" name="name" placeholder="name"/>
-             <input className="input" required="true" type="email" name="email" placeholder="mail"/>
-             <input className="input" required="true" type="password" name="password" placeholder="password"/>
-             <button className="button">Enviar</button>
-         </form>
+         <FromSuscribe/>
          <center><a href="https://www.facebook.com/usuario " target="_blank" className="fa fa-facebook-square"></a>
             <a href="https://twitter.com/usuario" target="_blank" className="fa fa-twitter-square"></a>
             <a href="https://plus.google.com/usuario" target="_blank" className="fa fa-google-plus-square"></a>

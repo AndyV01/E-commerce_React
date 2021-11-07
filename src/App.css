@@ -24,6 +24,23 @@ body {
     center;
   z-index: 0; 
 }
+.ok{
+  height:180px;
+}
+.compra{
+  width: 100%;
+  margin-top: 80px;
+  margin-left: 780px;
+}
+.suscripto{
+  text-align: center;
+  grid-column: span 2;
+  grid-row: span 2;
+  justify-items: center;
+}
+.aa{
+  margin: 150px 0;
+}
 
 header {
   display: grid;
@@ -395,6 +412,13 @@ button:hover {
   font-size: 172px;
   color: gray;
 }
+.neon {
+  color: #ffffff;
+  text-shadow: 0 0 8px #2cd0f0, 0 0 2px #2cd0f0, 0 0 10px #2cd0f0,
+    0 0 6px #2cd0f0, 0 0 20px #2cd0f0, 0 0 20px #2cd0f0, 0 0 1px #2cd0f0,
+    0 0 12px #2cd0f0;
+}
+
 
 @media (max-width: 600px) {
   body {

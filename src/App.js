@@ -16,6 +16,9 @@ import {
 } from "react-router-dom"
 import Producto from './Producto'
 import NoticiasInfo from './NoticiaInfo'
+import SuscriptoOK from './suscriptoOK'
+import Compra from './CompraExitosa'
+import NoRegistrado from './noRegistrado'
 
 
 function App() {
@@ -50,6 +53,15 @@ function App() {
            </Route>
            <Route path="/Blog">
              <Blog/>
+           </Route>
+           <Route  path="/SuscriptoOK">
+             <SuscriptoOK/>
+           </Route>
+           <Route  path="/CompraOK">
+             <Compra/>
+           </Route>
+           <Route  path="/noRegistrado">
+             <NoRegistrado/>
            </Route>
          </Switch>
       </main>
