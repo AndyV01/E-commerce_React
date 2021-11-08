@@ -10,11 +10,11 @@ const FormSuscribe = () => {
     state: { fromDashboard: true }
   }
 
-    const { post, data } = useFetch(`http://localhost:4000/suscribe`, {}, [])
+    const { post, loading } = useFetch(`http://localhost:4000/suscribe`, {}, [])
     const [email, setEmail] = React.useState('')
     const [name, setName] = React.useState('')
     const [password, setPassword] = React.useState('')
-    const handleSubmit = (e) => {
+    const handleSubmit = async(e) => {
         e.preventDefault()
         const params = {
           name,
@@ -22,8 +22,16 @@ const FormSuscribe = () => {
           password
         }
          post("", params)
-         history.replace(location.pathname)
+         const result = await post("", params)
+
+          console.log(result)
+        if(result.succes === true){
+          history.replace(location.pathname)
         } 
+        } 
+        if (loading){
+          return null
+      }  
         
     return(
     <form onSubmit={handleSubmit}>

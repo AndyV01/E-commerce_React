@@ -1,21 +1,33 @@
 import React from 'react'
 import useFetch from "use-http"
-import { Redirect } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 import user from './assets/villain.png'
 import whats from './assets/whatsapp.png'
  
 const Iconos = () => {
+    const history = useHistory()
+    const location = {
+      pathname: '/noRegistrado',
+      state: { fromDashboard: true }
+    }
 
     const { post } = useFetch(`http://localhost:4000/login`, {}, [])
     const [email, setEmail] = React.useState('')
     const [password, setPassword] = React.useState('')
-    const handleSubmit = (e) => {
+    const handleSubmit = async(e) => {
         e.preventDefault()
         const params = {
             email,
             password
         }
         post("", params)
+        const result = await post("", params)
+        if(result.success === false){
+            history.replace(location.pathname)
+        } else{
+            history.replace('/Catalogo')
+        }
+        
     }
 
     return (

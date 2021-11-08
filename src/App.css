@@ -28,9 +28,9 @@ body {
   height:180px;
 }
 .compra{
-  width: 100%;
+  width: 50%;
   margin-top: 80px;
-  margin-left: 780px;
+  margin-left: 50%;
 }
 .suscripto{
   text-align: center;
@@ -38,6 +38,7 @@ body {
   grid-row: span 2;
   justify-items: center;
 }
+
 .aa{
   margin: 150px 0;
 }
