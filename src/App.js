@@ -1,13 +1,13 @@
-import React, { useState } from 'react'
+import React from 'react'
 import logo from './assets/Logotransparente.png'
 import baner from './assets/led.jpg'
 import './App.css'
-import Nav from './nav'
-import Iconos from './iconos'
+import Nav from './COMPONENTES/nav'
+import Iconos from './COMPONENTES/iconos'
 import ContainerCards from './ContainerCardsHome'
 import Catalogo from './Catalogo' 
 import Blog from './Blog'
-import Footer from './Footer'
+import Footer from './COMPONENTES/Footer'
 import { 
   BrowserRouter as Router,
   Switch,
@@ -15,10 +15,10 @@ import {
   Redirect,
 } from "react-router-dom"
 import Producto from './Producto'
-import NoticiasInfo from './NoticiaInfo'
-import SuscriptoOK from './suscriptoOK'
-import Compra from './CompraExitosa'
-import NoRegistrado from './noRegistrado'
+import NoticiasInfo from './COMPONENTES/NoticiaInfo'
+import SuscriptoOK from './COMPONENTES/suscriptoOK'
+import Compra from './COMPONENTES/CompraExitosa'
+import NoRegistrado from './COMPONENTES/noRegistrado'
 
 
 function App() {

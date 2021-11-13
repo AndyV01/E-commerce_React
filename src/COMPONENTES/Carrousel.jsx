@@ -1,13 +1,13 @@
 import React from 'react'
-import logo1 from './assets/img1.jpg'
-import logo2 from './assets/img2.png'
-import logo3 from './assets/img3.png'
-import logo4 from './assets/img4.png'
-import logo5 from './assets/img5.png'
-import logo6 from './assets/img6.png'
-import logo7 from './assets/img7.png'
-import logo8 from './assets/img8.png'
-import logo9 from './assets/img9.png'
+import logo1 from '../assets/img1.jpg'
+import logo2 from '../assets/img2.png'
+import logo3 from '../assets/img3.png'
+import logo4 from '../assets/img4.png'
+import logo5 from '../assets/img5.png'
+import logo6 from '../assets/img6.png'
+import logo7 from '../assets/img7.png'
+import logo8 from '../assets/img8.png'
+import logo9 from '../assets/img9.png'
 
 const Carrousel = () => {
     return (

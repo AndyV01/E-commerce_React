@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from './assets/descarga.png'
+import logo from '../assets/descarga.png'
 
 const Compra = () => {
     return(

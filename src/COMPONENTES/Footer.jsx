@@ -1,6 +1,6 @@
 import React from 'react'
-import logo from './assets/Logotransparente.png'
-import FromSuscribe from "./formSuscribe"
+import logo from '../assets/Logotransparente.png'
+import FormSuscribe from "./formSuscribe"
  
 const Footer = () => {
    
@@ -58,7 +58,7 @@ const Footer = () => {
          </div>
          <div>
          <h3>SUSCRIPCION</h3>
-         <FromSuscribe/>
+         <FormSuscribe/>
          <center><a href="https://www.facebook.com/usuario " target="_blank" className="fa fa-facebook-square"></a>
             <a href="https://twitter.com/usuario" target="_blank" className="fa fa-twitter-square"></a>
             <a href="https://plus.google.com/usuario" target="_blank" className="fa fa-google-plus-square"></a>

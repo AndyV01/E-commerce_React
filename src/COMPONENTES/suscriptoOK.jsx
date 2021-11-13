@@ -1,7 +1,7 @@
 import React from "react"
 import { useHistory } from 'react-router'
-import logo1 from './assets/cogollosolo.png'
-import logo2 from './assets/comprobado.png'
+import logo1 from '../assets/cogollosolo.png'
+import logo2 from '../assets/comprobado.png'
 import Button from "./Button"
 
 const SuscriptoOK = ()  => {

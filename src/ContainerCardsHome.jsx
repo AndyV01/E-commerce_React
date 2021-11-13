@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Card from './CardHome'
+import Card from './COMPONENTES/CardHome'
 
  
 const ContainerCards = () => {

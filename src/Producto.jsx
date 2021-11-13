@@ -1,7 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router'
 import useFetch from "use-http"
-import FormCompra from './formOrdenDeCompra'
+import FormCompra from './COMPONENTES/formOrdenDeCompra'
 
 import './producto.css'
 

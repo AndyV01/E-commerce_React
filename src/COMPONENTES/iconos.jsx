@@ -1,8 +1,8 @@
 import React from 'react'
 import useFetch from "use-http"
 import { useHistory } from 'react-router-dom'
-import user from './assets/villain.png'
-import whats from './assets/whatsapp.png'
+import user from '../assets/villain.png'
+import whats from '../assets/whatsapp.png'
  
 const Iconos = () => {
     const history = useHistory()
