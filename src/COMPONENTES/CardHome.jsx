@@ -17,7 +17,7 @@ const Card = ({title1, title2, description,}) => {
         </div>
         <div className="card__back">
             <div className="body__card_back">
-                <h1>{title2}</h1>
+                <h2>{title2}</h2>
                 <p className="p">{description}</p>
                 <button onClick={handleBlog}>VER MAS</button>
             </div>

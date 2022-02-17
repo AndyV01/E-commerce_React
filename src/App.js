@@ -45,7 +45,7 @@ function App() {
            <Route path="/blog/:id">
              <NoticiasInfo/>
            </Route>
-           <Route  path="/home">
+           <Route  path="/home"> 
              <ContainerCards/>
            </Route>
            <Route path="/Catalogo">

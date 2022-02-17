@@ -166,7 +166,7 @@ main {
   background-color: rgba(252, 48, 208, 0.178);
   border-radius: 20px;
   grid-template-columns: 3fr 1fr;
-  grid-template-rows: 3fr 2fr;
+  
 }
 
 .container__card {
@@ -295,6 +295,7 @@ main {
 .p {
   font-family: 'Lato', sans-serif;
   color: #000;
+  font-weight: bold;
 }
 
 footer {
@@ -438,7 +439,7 @@ button:hover {
   main {
     grid-column: span 2;
     grid-row: 2;
-    height: 150vh;
+    
   }
   footer {
     grid-column: span 2;
@@ -457,4 +458,8 @@ button:hover {
   .secondary {
     display: none;
   }
+  .container__card{
+    margin-top: 50px;
+  }
+  
 }
