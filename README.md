@@ -24,5 +24,9 @@ Catalogo vista web:
 <img src="./src/assets/Catalogo-web.jpg" style= "height: 300px"> <img src="./src/assets/Catalogo-web2.jpg" style= "height: 300px"> 
 
 Prototipo 100% responsive a caualquier vista 
+
+
 servidor Node con Express en : https://github.com/AndyV01/-Server-and-Database
+
+
 Todo el Frontend con style en css echo especificamente para el proyecto.
