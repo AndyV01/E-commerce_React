@@ -1,11 +1,13 @@
-# Ecomerce con Blog de noticias, Suscripciones, inicio de secion 
+# E-commerce con Blog de noticias, Suscripciones e inicio de secion.
+
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm run start`
 
+HOME :
 <img src="./src/assets/Home-movile-view.jpg" style= "height: 300px"> <img src="./src/assets/Home-movile-view2.jpg" style= "height: 300px">
 
 Runs the app in the development mode.\
