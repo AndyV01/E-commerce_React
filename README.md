@@ -18,9 +18,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 
 
-### `Catalogo vista web:`
+Catalogo vista web:
 
-<img src="./src/assets/Catalogo-web2.jpg" style= "height: 300px"> <img src="./src/assets/Catalogo-web.jpg" style= "height: 300px"> 
+<img src="./src/assets/Catalogo-web.jpg" style= "height: 300px"> <img src="./src/assets/Catalogo2-web.jpg" style= "height: 300px"> 
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
