@@ -35,9 +35,9 @@ const FormSuscribe = () => {
         
     return(
     <form onSubmit={handleSubmit}>
-    <input className="input" required="true" type="text" value={name} onChange={(e) => setName(e.target.value) } required="true" name="name" placeholder="name"/>
-    <input className="input" required="true" type="email" value={email} onChange={(e) => setEmail(e.target.value) } required="true" name="email" placeholder="mail"/>
-    <input className="input" required="true" type="password" value={password} onChange={(e) => setPassword(e.target.value) } required="true" name="password" placeholder="password"/>
+    <input className="input" required="true" type="text" value={name} onChange={(e) => setName(e.target.value) } name="name" placeholder="name"/>
+    <input className="input" required="true" type="email" value={email} onChange={(e) => setEmail(e.target.value) } name="email" placeholder="mail"/>
+    <input className="input" required="true" type="password" value={password} onChange={(e) => setPassword(e.target.value) } name="password" placeholder="password"/>
     <button className="button">Enviar</button>
 </form>
    )

@@ -19,8 +19,7 @@ const Catalogo = () => {
     
      return (
     <div className="sectionC">
-    <h1 className="neon">_____________________________ SEMILLAS FEMINIZADAS
-        ____________________________</h1>
+    <h1 className="neon"> SEMILLAS FEMINIZADAS </h1>
     <div className="product_container">
         
         {data.list.map(producto => { 

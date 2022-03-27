@@ -425,7 +425,7 @@ button:hover {
 @media (max-width: 600px) {
   body {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 2fr 1fr;
+  
   }
   header {
     grid-column: span 2;
@@ -460,6 +460,14 @@ button:hover {
   }
   .container__card{
     margin-top: 50px;
+  }
+  .body__card_back p{
+    font-size: 15px;
+
+  }
+  .body__card_back button{
+    font-size: 12px;
+    padding: 5px 10px;
   }
   
 }

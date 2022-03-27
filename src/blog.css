@@ -169,6 +169,7 @@
     body {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 2fr 1fr;
+      
     }
     header {
     
@@ -195,6 +196,9 @@
       grid-row: 2;
       margin: 20px;
       width: 80%;
+    }
+    h1{
+      font-size: 20px;
     }
   
     aside div {

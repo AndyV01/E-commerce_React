@@ -17,7 +17,7 @@ const Blog = () => {
              <p className="pp">Una mujer se lanzó a la búsqueda de explorar formas alucinantes de consumir marihuana y las fue
              alcanzando, hasta que demostró 100 de ellas.
              </p>
-             <iframe width="560" height="315" src="https://www.youtube.com/embed/SAgrhc9CFno"
+             <iframe src="https://www.youtube.com/embed/SAgrhc9CFno"
              title="YouTube video player" frameborder="0"
              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
              allowfullscreen></iframe>
