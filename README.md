@@ -21,7 +21,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 Catalogo vista web:
 
-<img src="./src/assets/Catalogo-web.jpg" style= "height: 300px"> <img src="./src/assets/Catalogo-web2.jpg" style= "height: 300px"> 
+<img src="./src/assets/Catalogo-web.jpg" style= "height: 300px"> <img src="./src/assets/Catalogo-web1.jpg" style= "height: 300px"> 
 
 Prototipo 100% responsive a caualquier vista 
 
