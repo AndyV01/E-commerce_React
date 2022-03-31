@@ -10,7 +10,7 @@ In the project directory, you can run:
 Home vista movil :
 
 <br>
-<img src="./src/assets/wahts1.jpeg" style= "height: 300px"> <img src="./src/assets/whats.jpeg" style= "height: 300px">
+<img src="./src/assets/whats1.jpeg" style= "height: 300px"> <img src="./src/assets/whats2.jpeg" style= "height: 300px">
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
