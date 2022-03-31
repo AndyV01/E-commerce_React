@@ -1,4 +1,4 @@
-# E-commerce con Blog de noticias, Suscripciones e inicio de secion.
+# E-commerce con Blog de noticias, Suscripciones e inicio de sesion.
 
 
 ## Available Scripts
