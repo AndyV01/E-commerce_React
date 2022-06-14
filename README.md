@@ -1,4 +1,4 @@
-# E-commerce con Blog de noticias, Suscripciones e inicio de secion.
+# E-commerce con Blog de noticias, Suscripciones e inicio de sesion.
 
 
 ## Available Scripts
@@ -9,8 +9,8 @@ In the project directory, you can run:
 
 Home vista movil :
 
-<br>
-<img src="./src/assets/Home-movile-view.jpg" style= "height: 300px"> <img src="./src/assets/Home-movile-view2.jpg" style= "height: 300px">
+
+<img src="./src/assets/whats1.jpeg" style= "height: 300px"><img src="./src/assets/whats2.jpeg" style= "height: 300px">
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
