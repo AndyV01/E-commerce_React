@@ -263,7 +263,8 @@ main {
   padding: 10px;
   text-align: center;
   transform: translateZ(60px);
-  margin-top: 15px;
+  display: grid;
+  justify-content: center;
   justify-items: center;
   align-items: center;
 }
