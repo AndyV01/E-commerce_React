@@ -60,14 +60,14 @@ header > div {
   position: absolute;
 }
 .baner{
-  opacity: 50%;
+  opacity: 100% !important;
   border-radius: 20px;
    width: 60%;
   z-index: 0;
 }
 .logo {
   height: 200px;
-  opacity: 90%;
+  opacity: 100% !important;
   z-index: 2;
   margin-bottom: 50px;
   animation-name: logo;
