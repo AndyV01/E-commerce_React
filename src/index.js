@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Axios from 'axios';
+
+Axios.defaults.baseURL = 'https://server-kush.herokuapp.com';
 
 ReactDOM.render(
   <React.StrictMode>
