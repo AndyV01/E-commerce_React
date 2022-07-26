@@ -10,9 +10,9 @@ import spinner from "../assets/spinner.gif"
 
 const NoticiasInfo = ()  => {
 
-    const imgUrl = 'http://localhost:4000/'
+    const imgUrl = 'https://server-kush.herokuapp.com'
     const {id} = useParams()
-    const { loading, data } = useFetch(`http://localhost:4000/blog/${id}`, {}, [])
+    const { loading, data } = useFetch(`https://server-kush.herokuapp.com/blog/${id}`, {}, [])
     
     if (loading) {
         return <div className="spinner">

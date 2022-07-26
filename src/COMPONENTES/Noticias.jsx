@@ -4,7 +4,7 @@ import useFetch from "use-http"
 
 const Noticias = ()  => {
     
-    const {loading, data, error} = useFetch("http://localhost:4000/blog", {},[])
+    const {loading, data, error} = useFetch("https://server-kush.herokuapp.com/blog", {},[])
 
     if (error){
         console.error(error)

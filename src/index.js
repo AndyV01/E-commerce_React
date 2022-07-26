@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import Axios from 'axios';
 
 Axios.defaults.baseURL = 'https://server-kush.herokuapp.com';
+Axios.defaults.headers.common['Authorization'] = 'Authorization';
+Axios.defaults.headers.post['Content-Type'] = 'application/json';
 
 ReactDOM.render(
   <React.StrictMode>

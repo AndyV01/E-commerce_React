@@ -11,7 +11,7 @@ const Iconos = () => {
       state: { fromDashboard: true }
     }
 
-    const { post } = useFetch(`http://localhost:4000/login`, {}, [])
+    const { post } = useFetch(`https://server-kush.herokuapp.com/login`, {}, [])
     const [email, setEmail] = React.useState('')
     const [password, setPassword] = React.useState('')
     const handleSubmit = async(e) => {

@@ -5,8 +5,8 @@ import './catalogo.css'
 import spinner from "./assets/spinner.gif"
 
 const Catalogo = () => {
-   const imgUrl = 'http://localhost:4000/'
-    const { loading, data, error } = useFetch("http://localhost:4000/catalogo", {}, [])
+   const imgUrl = 'https://server-kush.herokuapp.com'
+    const { loading, data, error } = useFetch("https://server-kush.herokuapp.com/catalogo", {}, [])
      
         if (error){
             console.error(error)

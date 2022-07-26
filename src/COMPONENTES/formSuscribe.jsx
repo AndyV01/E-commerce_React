@@ -10,7 +10,7 @@ const FormSuscribe = () => {
     state: { fromDashboard: true }
   }
 
-    const { post, loading } = useFetch(`http://localhost:4000/suscribe`, {}, [])
+    const { post, loading } = useFetch(`https://server-kush.herokuapp.com/suscribe`, {}, [])
     const [email, setEmail] = React.useState('')
     const [name, setName] = React.useState('')
     const [password, setPassword] = React.useState('')
