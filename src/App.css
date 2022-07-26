@@ -274,7 +274,7 @@ main {
   flex-wrap: wrap;
 }
 .body__card_back h2{
-  color: rgb(137, 54, 119)
+  color: rgb(251, 228, 246)
 }
 .body__card_back button {
   padding: 10px 40px;
@@ -296,7 +296,7 @@ main {
 
 .p {
   font-family: 'Lato', sans-serif;
-  color: rgb(188, 129, 169);
+  color: rgb(250, 234, 245);
   font-weight: bold;
 }
 
@@ -336,8 +336,9 @@ h3 {
   margin-top: 10px;
   height: 80%;
   color:rgb(137, 54, 119);
-  background: #d0d0d09c;
-  font-size: 7px;
+  background: #d0d0d089;
+  border: none;
+  font-size: 15px;
   width: 200px;
   border-radius: 20px;
   font-family: "Roboto", sans-serif;
