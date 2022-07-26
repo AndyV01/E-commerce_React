@@ -132,7 +132,6 @@
   }
   .container-carrousel img {
     width: 70%;
-    opacity: 100%;
     transition: all 300ms;
   }
   .container-carrousel img:hover {
