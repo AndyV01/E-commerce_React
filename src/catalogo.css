@@ -41,7 +41,6 @@
     border-radius: 20px;
     object-fit: cover;
     transition: all 300ms;
-    opacity: 80%;
   }
   section img:hover {
     transform: scale(1.2);
