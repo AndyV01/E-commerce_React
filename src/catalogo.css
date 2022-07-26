@@ -48,9 +48,7 @@
     transition: all 300ms;
     opacity: 100%;
   }
-  h3 {
-    font-family: 'Big Shoulders Stencil Display', cursive;
-  }
+
   .product {
     width: 220px;
     height: 300px;

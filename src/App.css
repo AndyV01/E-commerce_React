@@ -315,7 +315,6 @@ footer div {
 }
 .divimg {
   height: 100px;
-  opacity: 100%;
   margin-top: 10px;
   border-radius: 0;
 }
@@ -336,7 +335,7 @@ h3 {
   height: 80%;
   width: 200px;
   border-radius: 20px;
-  font-family: "Staatliches", cursive;
+  font-family: "Roboto", sans-serif;
 }
 form {
   display: grid;

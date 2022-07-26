@@ -16,6 +16,7 @@ const Card = ({title1, title2, description,}) => {
             </div>
         </div>
         <div className="card__back">
+            <div className="bg"></div>
             <div className="body__card_back">
                 <h2>{title2}</h2>
                 <p className="p">{description}</p>
