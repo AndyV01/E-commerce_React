@@ -9,7 +9,7 @@ const Card = ({title1, title2, description,}) => {
     return (
   <div className="card__father"> 
      <div className="card">
-        <div className="card__front1">
+        <div className="card__front1 card_front2 card_front3">
             <div className="bg"></div>
             <div className="body__card_front">
                 <h1>{title1}</h1>
