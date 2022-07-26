@@ -213,17 +213,17 @@ main {
 }
 
 .card__front1 {
-  background-image: url(./assets/FOTO-4_web.jpg);
+  background-image: url(./assets/FOTO-4_web.jpg) !important;
   background-size: cover;
   background-position: center;
 }
 .card__front2 {
-  background-image: url(./assets/17631.jpg);
+  background-image: url(./assets/17631.jpg) !important;
   background-size: cover;
   background-position: center;
 }
 .card__front3 {
-  background-image: url(./assets/descarga.jfif );
+  background-image: url(./assets/descarga.jfif) !important;
   background-size: cover;
   background-position: center;
 } 

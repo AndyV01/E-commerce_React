@@ -40,7 +40,7 @@ const Iconos = () => {
                   <button className="button-login">Iniciar secion</button>
                  </form>
              </span>
-             <a href="https://web.whatsapp.com/"><img className="wapp" src={whats} alt="whatsapp"/></a>
+             <a href="https://api.whatsapp.com/send?phone=59892222501"><img className="wapp" src={whats} alt="whatsapp"/></a>
          </>
      )
  }

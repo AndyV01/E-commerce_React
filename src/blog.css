@@ -44,6 +44,7 @@
   aside a {
     color: rgb(255, 0, 242);
     text-decoration: none;
+    font-size: 0.8em;
   }
  
   .newLink {
@@ -51,6 +52,7 @@
     border-radius: 20px;
     height: 40px;
     width: 80%;
+    display: grid;
     margin-bottom: 10px;
     text-align: center;
     justify-items: center;

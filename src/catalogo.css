@@ -54,15 +54,15 @@
     border-radius: 20px;
     text-align: center;
   }
-  .buttonC {
+  .buttonC{
     padding: 5px 25px;
     font-size: 16px;
     cursor: pointer;
     border: none;
     color: white;
-    background: #ff96ad;
+    background: #ff96ad !important;
     box-shadow: 0 0 5px #ff96ad, 0 0 25px #ff96ad, 0 0 50px #ff96ad,
-      0 0 200px #ff96ad;
+      0 0 200px #ff96ad !important;
     border-radius: 10px;
     transition: box-shadow 600ms;
     text-decoration: none;
