@@ -1,21 +1,14 @@
 # E-commerce con Blog de noticias, Suscripciones e inicio de sesion.
 
 
-## Available Scripts
+## https://kushteen.herokuapp.com/home
 
-In the project directory, you can run:
-
-### `npm run start`
+Deploy en HerokuApp
 
 Home vista movil :
 
 
 <img src="./src/assets/whats1.jpeg" style= "height: 300px"><img src="./src/assets/whats2.jpeg" style= "height: 300px">
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
- 
 
 
 
@@ -26,7 +19,7 @@ Catalogo vista web:
 Prototipo 100% responsive a caualquier vista 
 
 
-servidor Node con Express en : https://github.com/AndyV01/-Server-and-Database
+Servidor Node con Express en : https://github.com/AndyV01/-Server-and-Database
+Model ORM sequelize en DataBase PostgreSQL
 
 
-Todo el Frontend con style en css echo especificamente para el proyecto.
