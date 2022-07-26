@@ -65,7 +65,7 @@ const Footer = () => {
             <a href="https://plus.google.com/usuario" target="_blank" className="fa fa-google-plus-square"></a>
             <a href="https://linkedin.com/usuario" target="_blank" className="fa fa-linkedin-square"></a>
          </center>
-         <p>© Copyright 2021 - kushTeen.uy - TODOS LOS DERECHOS RESERVADOS</p>
+         <p>©Copyright 2022 - kushTeen.uy - TODOS LOS DERECHOS RESERVADOS</p>
          </div>
          </footer>
     )
