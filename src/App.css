@@ -142,14 +142,15 @@ span:hover > .login {
   right: 50px;
   height: 50px;
   z-index: 2;
-
 }
 .add {
+  cursor: pointer;
   position: fixed;
-  bottom: 270px;
+  bottom: 470px;
   right: 50px;
   height: 50px;
   z-index: 2;
+  display: none;
 }
 .wapp {
   position: fixed;
@@ -199,8 +200,6 @@ main {
   transition: all 600ms;
 }
 .card__front1,
-.card__front2,
-.card__front3,
 .card__back {
   width: 100%;
   height: 100%;
@@ -213,20 +212,22 @@ main {
 }
 
 .card__front1 {
-  background-image: url(./assets/FOTO-4_web.jpg) !important;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  
 }
-.card__front2 {
-  background-image: url(./assets/17631.jpg) !important;
+.card__fondo {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
   background-size: cover;
+  position: absolute;
   background-position: center;
+  object-fit: cover;
+  position: relative;
 }
-.card__front3 {
-  background-image: url(./assets/descarga.jfif) !important;
-  background-size: cover;
-  background-position: center;
-} 
+
 .card__back {
   transform: rotateY(180deg);
   background-image: url(./assets/13834732743_002376e2bf_b.jpg);
@@ -243,7 +244,6 @@ main {
   justify-content: center;
   align-items: center;
   color: white;
-  transform: translateZ(60px);
 }
 
 .bg {
@@ -259,7 +259,7 @@ main {
 .body__card_back {
   width: 100%;
   height: 100%;
-  padding: 10px;
+  padding: 15px 5px;
   text-align: center;
   transform: translateZ(60px);
   display: grid;
@@ -452,7 +452,34 @@ button:hover {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr;
   }
-
+  .add{
+    display: block;
+  }
+  nav {
+    opacity: 0;
+  visibility: hidden;
+  transform: scaleY(0);
+  transform-origin: 0% 0%;
+  transition: all 0.35s;
+  position: fixed;
+  bottom: 460px;
+  right: 110px;
+  height: 50px;
+  z-index: 2;
+  
+  }
+  span:hover > nav {
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+  }
+  nav > ul {
+    grid-template-columns: none;
+  }
+  .nav-button{
+    text-align: center;
+    background: linear-gradient(to left, #ec6bf0c8, rgb(95, 13, 149)); 
+  }
   ul {
     padding: 0;
     margin: 0;

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useHistory } from 'react-router'
  
-const Card = ({title1, title2, description,}) => {
+const Card = ({title1, title2, description, logo}) => {
     const history = useHistory()
     const handleBlog = () => {
         history.push("/blog")
@@ -9,9 +9,9 @@ const Card = ({title1, title2, description,}) => {
     return (
   <div className="card__father"> 
      <div className="card">
-        <div className="card__front1 card_front2 card_front3">
-            <div className="bg"></div>
-            <div className="body__card_front">
+        <div className="card__front1">
+            <img className='card__fondo' src={logo} alt="img" />
+            <div className="body__card_front bg">
                 <h1>{title1}</h1>
             </div>
         </div>

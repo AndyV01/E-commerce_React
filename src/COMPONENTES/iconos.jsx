@@ -3,6 +3,8 @@ import useFetch from "use-http"
 import { useHistory } from 'react-router-dom'
 import user from '../assets/villain.png'
 import whats from '../assets/whatsapp.png'
+import menuMovile from '../assets/menu.png'
+import Nav from './nav'
  
 const Iconos = () => {
     const history = useHistory()
@@ -40,6 +42,10 @@ const Iconos = () => {
                   <button className="button-login">Iniciar secion</button>
                  </form>
              </span>
+                <span>
+                    <img src={menuMovile} alt="menu" className='add' />
+                    <Nav/>
+                    </span>
              <a href="https://api.whatsapp.com/send?phone=59892222501"><img className="wapp" src={whats} alt="whatsapp"/></a>
          </>
      )
