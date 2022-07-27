@@ -343,6 +343,9 @@ h3 {
   border-radius: 20px;
   font-family: "Roboto", sans-serif;
 }
+span > nav {
+  visibility: hidden;
+}
 form {
   display: grid;
   justify-items: center;
