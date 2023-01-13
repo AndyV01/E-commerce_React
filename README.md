@@ -1,9 +1,9 @@
 # E-commerce con Blog de noticias, Suscripciones e inicio de sesion.
 
 
-## https://kushteen.herokuapp.com/home
+## https://kushteenuy.netlify.app/
 
-Deploy en HerokuApp
+Deploy en Netlify.App
 
 Home vista movil :
 
