@@ -5,7 +5,7 @@ import Button from './Button'
 
 const FormCompra = () => {
     const {id} = useParams()
-    const { post, loading } = useFetch(`https://server-kush.herokuapp.com/order/${id}`, {}, [])
+    const { post, loading } = useFetch(`https://kushteenuy.fly.dev/order/${id}`, {}, [])
     const history = useHistory()
     const location = {
       pathname: '/compraOK',
