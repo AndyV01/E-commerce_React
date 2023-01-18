@@ -6,9 +6,9 @@ import FormCompra from './COMPONENTES/formOrdenDeCompra'
 import './producto.css'
 
 const Producto = () => {
-    const imgUrl = 'https://server-kush.herokuapp.com/'
+    const imgUrl = 'https://kushteenuy.fly.dev/'
     const {id} = useParams()
-    const { loading, data } = useFetch(`https://server-kush.herokuapp.com/producto/${id}`, {}, [])
+    const { loading, data } = useFetch(`https://kushteenuy.fly.dev/producto/${id}`, {}, [])
     
     if (loading)
        {

@@ -17,13 +17,11 @@ body {
   grid-template-rows: 2fr 6fr 3fr;
   gap: 10px 10px;
   background-color: black;
-}
-.stars {
   background: #000
-    url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top
-    center;
-  z-index: 0; 
+  url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top
+  center;
 }
+
 .ok{
   height:180px;
 }
