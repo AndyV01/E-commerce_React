@@ -60,11 +60,6 @@ const Footer = () => {
          <div>
          <h3>SUSCRIPCION</h3>
          <FormSuscribe/>
-         <center><a href="https://www.facebook.com/usuario " target="_blank" className="fa fa-facebook-square"></a>
-            <a href="https://twitter.com/usuario" target="_blank" className="fa fa-twitter-square"></a>
-            <a href="https://plus.google.com/usuario" target="_blank" className="fa fa-google-plus-square"></a>
-            <a href="https://linkedin.com/usuario" target="_blank" className="fa fa-linkedin-square"></a>
-         </center>
          <p>©Copyright 2022 - kushTeen.uy - TODOS LOS DERECHOS RESERVADOS</p>
          </div>
          </footer>
