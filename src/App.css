@@ -346,6 +346,7 @@ span > nav {
 form {
   display: grid;
   justify-items: center;
+  padding-bottom: 15px;
 }
 .input {
   margin: 3px;

@@ -7,7 +7,7 @@ const Footer = () => {
     return (
          <footer>
          <div><img className="divimg" src={logo} alt="Logo Kush"/>
-             <p>
+             <p style={{padding: 10}}>
              Basándose en la transmisión de los valores en los que se apoya la comunidad alternativa que existe en
              Humboldt, valores como la cooperación, la igualdad, el respeto hacia el medio ambiente, el respeto a la
              diversidad humana y a los cultivos 100% orgánicos, nuestro banco de semillas de marihuana Humboldt seeds
