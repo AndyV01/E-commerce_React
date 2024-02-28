@@ -10,12 +10,12 @@
   box-sizing: border-box;
 }
 body {
-  width: 100vw;
+  width: 98.9vw;
   height: 220vh;
   display: grid;
   grid-template-columns: 1fr 2fr 2fr 2fr;
   grid-template-rows: 2fr 6fr 3fr;
-  gap: 10px 10px;
+  gap: 10px ;
   background-color: black;
   background-image: url(./assets/stars.png);
   
