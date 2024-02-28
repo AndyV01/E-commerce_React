@@ -5,31 +5,32 @@ import Noticias from './Noticias'
 import baner from '../assets/baner 2.jpg'
 import useFetch from "use-http"
 import spinner from "../assets/spinner.gif"
-
+import { todasLasNoticias } from '../servicios/noticias'
 
 
 const NoticiasInfo = ()  => {
+    const laNoticia = todasLasNoticias()
 
-    const imgUrl = 'https://kushteenuy.fly.dev/'
-    const {id} = useParams()
-    const { loading, data } = useFetch(`https://kushteenuy.fly.dev/blog/${id}`, {}, [])
+   // const imgUrl = 'https://kushteenuy.fly.dev/'
+   // const {id} = useParams()
+   // const { loading, data } = useFetch(`https://kushteenuy.fly.dev/blog/${id}`, {}, [])
     
-    if (loading) {
-        return <div className="spinner">
-        <img src={spinner} alt=""/>
-    </div>
-    }
+   // if (loading) {
+   //     return <div className="spinner">
+   //     <img src={spinner} alt=""/>
+   // </div>
+   // }
     
     return (
         <>
         <div className="section">
         
         <h1>
-            {data.new.name_n}
+            {laNoticia.name_n}
         </h1>
-        <img class="img2" src={imgUrl + data.new.route} alt="product"/>
+        <img class="img2" src={laNoticia.route} alt="product"/>
         <p className="pp">
-            {data.new.description}
+            {laNoticia.description}
         </p>
         <img className="img" src={baner} alt=""/>
        </div>

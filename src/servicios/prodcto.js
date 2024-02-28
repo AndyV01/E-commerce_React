@@ -4,7 +4,7 @@ export const traerProductos = () => {
             {
               id: 1,
               name_p: "Purple Match",
-              route: "https://biladrugs.com/wp-content/uploads/2020/07/Purple-Kush-Indica.jpg",
+              route: "https://bucket.growdiaries.com/static/seed_item_photos/3218/bubba-s-gift_700.jpg",
               description:"Purple Kush, también conocida como Purple Hindu Kush, es una popular variedad índica pura famosa por su poderosa potencia.Si bien es un cruce entre las cepas Hindu Kush y Purple Afghani, que ya son conocidas por sus efectos, la variedad Purple Kush realmente se distingue de sus padres y otras razas índicas por su hermosa apariencia, sabor dulce y efectos fuertes.De hecho, fue nombrada por la revista High Times como una de las 10 cepas más poderosas del mundo.Como una índica fuerte, es popular entre los pacientes médicos y, sin embargo, es una de esas raras cepas índica que satisface a los consumidores recreativos y permite a los consumidores sentir una sensación de relajación casi instantáneamente al fumar junto con un subidón eufórico.Al igual que la clasificación de High Times, la Purple Kush es una variedad que debería estar en el top 10 de cannabis de todo el mundo.",
               price: 1500,
               link_p: "/producto/1"
@@ -44,7 +44,7 @@ export const traerProductos = () => {
              {
                id: 6,
                name_p: "Sour Diesel",
-               route: "https://www.nirvanashop.com/1311-nr1_700/sour-diesel-hembra.jpg",
+               route: "https://www.cannaconnection.com/12125/sour-diesel.jpg",
                description: "La Sour Diesel es una de las variedades de cannabis más famosas que existen. Esta excelente productora de resina de California impresiona con su intenso y aromático humo y un extraordinario subidón: los rasgos de una buena hierba californiana. Para muchos amantes del cannabis, no hay nada mejor que las variedades procedentes de la costa oeste de Estados Unidos; y la Sour Diesel es una de estas famosas leyendas. Criada bajo el incesante sol californiano, es un cruce de la Original Diesel con Northern Lights y genes Shiva y Hawaiian, por lo que tiene unos impresionantes rasgos y muchos seguidores en todo el mundo.",
                price: 1900,
                link_p: "/producto/6"

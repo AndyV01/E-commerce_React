@@ -1,15 +1,16 @@
 import React from 'react'
-import { useParams } from 'react-router'
-import useFetch from "use-http"
+
+
 import FormCompra from './COMPONENTES/formOrdenDeCompra'
-import { product } from './Catalogo'
+import { traerProductos } from './servicios/prodcto'
 
 import './producto.css'
 
 const Producto = () => {
-    const imgUrl = 'https://kushteenuy.fly.dev/'
-    const {id} = useParams()
-    const { loading, data } = useFetch(`https://kushteenuy.fly.dev/producto/${id}`, {}, [])
+    const product = traerProductos()
+   // const imgUrl = 'https://kushteenuy.fly.dev/'
+   // const {id} = useParams()
+   // const { loading, data } = useFetch(`https://kushteenuy.fly.dev/producto/${id}`, {}, [])
          
 return (
          <section>
@@ -18,7 +19,7 @@ return (
              </div>
              <div className="data">
                  <h1 className="h1" >
-                 {product.name}
+                 {product.name_p}
                  </h1 >
                  <p>
                  {product.description}
