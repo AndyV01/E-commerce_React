@@ -60,7 +60,7 @@ const Footer = () => {
          <div>
          <h3>SUSCRIPCION</h3>
          <FormSuscribe/>
-         <p>©Copyright 2022 - kushTeen.uy - TODOS LOS DERECHOS RESERVADOS</p>
+         <p>©Copyright 2024 - kushTeen.uy - TODOS LOS DERECHOS RESERVADOS</p>
          </div>
          </footer>
     )

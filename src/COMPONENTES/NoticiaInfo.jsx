@@ -9,10 +9,11 @@ import { todasLasNoticias } from '../servicios/noticias'
 
 
 const NoticiasInfo = ()  => {
-    const laNoticia = todasLasNoticias()
+    const {id} = useParams()
+    const laNoticia = todasLasNoticias().find(noticia => noticia.id === parseInt(id));
 
    // const imgUrl = 'https://kushteenuy.fly.dev/'
-   // const {id} = useParams()
+   
    // const { loading, data } = useFetch(`https://kushteenuy.fly.dev/blog/${id}`, {}, [])
     
    // if (loading) {
@@ -20,14 +21,13 @@ const NoticiasInfo = ()  => {
    //     <img src={spinner} alt=""/>
    // </div>
    // }
-    
+   if (!laNoticia) {
+    return <div>No se encontró la noticia</div>;
+  }
     return (
         <>
         <div className="section">
-        
-        <h1>
-            {laNoticia.name_n}
-        </h1>
+        <h1>{laNoticia.name_n}</h1>
         <img class="img2" src={laNoticia.route} alt="product"/>
         <p className="pp">
             {laNoticia.description}
