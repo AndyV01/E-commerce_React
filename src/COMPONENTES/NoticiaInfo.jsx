@@ -13,7 +13,6 @@ const NoticiasInfo = ()  => {
     const laNoticia = todasLasNoticias().find(noticia => noticia.id === parseInt(id));
 
    // const imgUrl = 'https://kushteenuy.fly.dev/'
-   
    // const { loading, data } = useFetch(`https://kushteenuy.fly.dev/blog/${id}`, {}, [])
     
    // if (loading) {

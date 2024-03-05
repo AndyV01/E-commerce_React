@@ -1,31 +1,33 @@
 import React from 'react'
-
-
+import { useParams } from 'react-router'
 import FormCompra from './COMPONENTES/formOrdenDeCompra'
 import { traerProductos } from './servicios/prodcto'
 
 import './producto.css'
 
 const Producto = () => {
-    const product = traerProductos()
+    const { id } = useParams();
+    const productos = traerProductos()
+    const producto = productos.find(producto => producto.id === parseInt(id, 10));
    // const imgUrl = 'https://kushteenuy.fly.dev/'
-   // const {id} = useParams()
    // const { loading, data } = useFetch(`https://kushteenuy.fly.dev/producto/${id}`, {}, [])
-         
+   if (!producto) {
+    return <div>No se encontró el producto</div>;
+}      
 return (
          <section>
              <div>
-                 <img src={product.route} alt="product"/>
+                 <img src={producto.route} alt="product"/>
              </div>
              <div className="data">
                  <h1 className="h1" >
-                 {product.name_p}
+                 {producto.name_p}
                  </h1 >
                  <p>
-                 {product.description}
+                 {producto.description}
                  </p>
                  <div className="description">
-                     <h3>Pac 3 semillas ${product.price}</h3>
+                     <h3>Pac 3 semillas ${producto.price}</h3>
                      <FormCompra/>
                  </div>
              </div>
