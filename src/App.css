@@ -73,12 +73,12 @@ header > div {
   color: white;
   text-decoration: transparent;
   cursor: pointer;
+  padding: 3px;
 }
 nav > ul {
   display: grid;
-  grid-template-columns: repeat(5, auto);
+  grid-template-columns: repeat(3, auto);
   gap: 20px;
-  
 }
 
 nav a:hover {
