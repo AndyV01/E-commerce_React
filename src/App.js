@@ -10,6 +10,7 @@ import {
 } from "react-router-dom"
 
 import logo from './assets/Logotransparente.png'
+import cogoLogo from './assets/cogollosolo.png'
 import baner from './assets/led.jpg'
 import './App.css'
 import Nav from './COMPONENTES/nav'
@@ -41,22 +42,30 @@ function App() {
       const data = await response.json();
       console.log('data', data);
       const { traits } = data;
+
       if (traits) {
         const entityNames = Object.keys(traits);
-        if (entityNames.length > 0) {
-          const mainEntity = entityNames[0];
-          const responseMessage = traits[mainEntity][0].value;
+        const mainEntity = entityNames[0];
+        const responseMessage = traits[mainEntity][0].value;
+
+        const formattedMessage = newMessage.replace(/\s+/g, '_').toLowerCase();
+
+        if (formattedMessage === mainEntity) {
           addResponseMessage(responseMessage);
         } else {
           addResponseMessage('Lo siento, no pude entender tu pregunta. ¿Puedes intentarlo de otra manera?');
         }
-      } else { 
+      } else {
         addResponseMessage('Lo siento, no pude entender tu pregunta. ¿Puedes intentarlo de otra manera?');
       }
     } catch (error) {
       console.error('Error al enviar mensaje a Wit.ai:', error);
       addResponseMessage('Lo siento, ocurrió un error al procesar tu solicitud. Por favor, inténtalo de nuevo más tarde.');
     }
+  };
+
+  const addEmoji = (emoji) => {
+    addResponseMessage(emoji.native);
   };
 
   return (
@@ -106,7 +115,9 @@ function App() {
           handleNewUserMessage={handleNewUserMessage}
           title="Chatea con nosotros"
           subtitle="¿En qué podemos ayudarte?"
+          profileAvatar={cogoLogo}
         />
+        
       </body>
     </Router>
   )

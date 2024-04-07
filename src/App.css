@@ -20,6 +20,21 @@ body {
   background-image: url(./assets/stars.png);
   
 }
+.rcw-avatar {
+  width: 55px; 
+  height: 40px;
+  border-radius: 100%; 
+  object-fit: cover; 
+  margin-right: 0;
+}
+.rcw-conversation-container 
+.rcw-header {
+  padding: 15px 0 15px;
+}
+.rcw-sender{
+  gap: 10px;
+}
+
 .ok{
   height:180px;
 }
@@ -122,7 +137,7 @@ span:hover > .login {
   cursor: pointer;
   position: fixed;
   bottom: 410px;
-  right: 50px;
+  right: 25px;
   height: 50px;
   z-index: 2;
 }
@@ -138,7 +153,7 @@ span:hover > .login {
 .wapp {
   position: fixed;
   bottom: 340px;
-  right: 50px;
+  right: 25px;
   height: 45px;
   z-index: 2;
 }
