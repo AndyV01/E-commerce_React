@@ -26,6 +26,7 @@ section {
     margin-bottom: 40px;
     margin-left: 60px;
     margin-right: 60px;
+    color: white;
     
   }
   input{
@@ -48,10 +49,6 @@ section {
     padding: 20px;
     align-items: center;
     text-align: center;
-  }
-  section div {
-    color: #ffffff;
-    display: grid;
   }
   .h1{
     margin: 5px;

@@ -64,10 +64,6 @@ function App() {
     }
   };
 
-  const addEmoji = (emoji) => {
-    addResponseMessage(emoji.native);
-  };
-
   return (
     <Router>
       <body className="stars">
@@ -116,8 +112,8 @@ function App() {
           title="Chatea con nosotros"
           subtitle="¿En qué podemos ayudarte?"
           profileAvatar={cogoLogo}
-        />
-        
+          emojis={true}
+       />
       </body>
     </Router>
   )

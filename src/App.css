@@ -34,7 +34,9 @@ body {
 .rcw-sender{
   gap: 10px;
 }
-
+.emoji-mart-search-icon {
+  margin-top: 15px;
+}
 .ok{
   height:180px;
 }
@@ -145,7 +147,7 @@ span:hover > .login {
   cursor: pointer;
   position: fixed;
   bottom: 470px;
-  right: 50px;
+  right: 25px;
   height: 50px;
   z-index: 2;
   display: none;
