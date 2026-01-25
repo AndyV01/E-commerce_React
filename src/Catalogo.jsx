@@ -1,8 +1,6 @@
 import React from 'react'
 import {Link} from "react-router-dom"
-import useFetch from "use-http"
 import './catalogo.css'
-import spinner from "./assets/spinner.gif"
 import {traerProductos} from './servicios/prodcto'
 
 
