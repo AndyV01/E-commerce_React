@@ -1,25 +1,57 @@
-# E-commerce con Blog de noticias, Suscripciones , chatBot 
+# E-commerce React Application
 
+E-commerce web application with product catalog, news blog, subscriptions, and chatbot integration.
 
-## https://kushteenuy.netlify.app/
+## Live Demo
+https://kushteenuy.netlify.app/
 
-Deploy en Netlify.App
+## Tech Stack
+- React
+- JavaScript
+- HTML5 / CSS3
+- Node.js
+- Express
+- PostgreSQL
+- Sequelize ORM
 
-Home vista movil :
+## Features
+- Product catalog
+- Responsive design (mobile & desktop)
+- Blog / news section
+- User subscriptions
+- Chatbot integration
 
+## Screenshots
 
-<img src="./src/assets/whats1.jpeg" style= "height: 300px"><img src="./src/assets/whats2.jpeg" style= "height: 300px">
+### Mobile View
+<img src="./src/assets/whats1.jpeg" height="300">
+<img src="./src/assets/whats2.jpeg" height="300">
 
+### Web View
+<img src="./src/assets/Catalogo-web.jpg" height="300">
+<img src="./src/assets/Catalogo-web1.jpg" height="300">
 
+## Backend
+Node.js + Express server available at:  
+https://github.com/AndyV01/-Server-and-Database
 
-Catalogo vista web:
+Database managed with Sequelize ORM and PostgreSQL.
 
-<img src="./src/assets/Catalogo-web.jpg" style= "height: 300px"> <img src="./src/assets/Catalogo-web1.jpg" style= "height: 300px"> 
+## CI/CD
 
-Prototipo 100% responsive a caualquier vista 
+This project uses **GitHub Actions** to implement a basic **CI/CD pipeline**.
 
+### Pipeline includes:
+- Dependency installation using npm
+- Production build validation (`npm run build`)
+- Automatic deployment to GitHub Pages
+- Triggered on every push and pull request to the `main` branch
 
-Servidor Node con Express en : https://github.com/AndyV01/-Server-and-Database
-Model ORM sequelize en DataBase PostgreSQL
+This pipeline helps ensure build stability and continuous deployment.
+
+---
+
+## Status
+🚧 Legacy project – currently maintained for CI/CD learning and best practices.
 
 
