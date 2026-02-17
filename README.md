@@ -128,5 +128,5 @@ Actualmente se mantiene para:
 Frontend / Full-Stack Developer (React-focused)
 
 - GitHub: https://github.com/AndyV01
-- Portfolio: https://andyv01.github.io/portafolio/
+- Portfolio: https://portfolio-nextjs-nine-lac.vercel.app/
 - LinkedIn: https://linkedin.com/in/andres-vallarino
