@@ -54,3 +54,14 @@ section {
     margin: 5px;
     z-index: 5;
   }
+.spinner{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.spinner img {
+  width: 90px;
+  height: 90px;
+}
