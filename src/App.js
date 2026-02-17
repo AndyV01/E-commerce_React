@@ -24,6 +24,7 @@ import NoticiasInfo from './COMPONENTES/NoticiaInfo'
 import SuscriptoOK from './COMPONENTES/suscriptoOK'
 import Compra from './COMPONENTES/CompraExitosa'
 import NoRegistrado from './COMPONENTES/noRegistrado'
+import NotFound from './COMPONENTES/NotFound'
 
 
 function App() {
@@ -103,6 +104,9 @@ function App() {
             </Route>
             <Route path="/noRegistrado">
               <NoRegistrado />
+            </Route>
+            <Route path="*">
+              <NotFound />
             </Route>
           </Switch>
         </main>
