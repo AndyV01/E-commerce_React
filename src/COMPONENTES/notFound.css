@@ -1,0 +1,46 @@
+.not-found {
+  min-height: 55vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0.8rem;
+  color: #ffffff;
+  padding: 2rem 1rem;
+}
+
+.not-found__code {
+  font-size: clamp(4rem, 12vw, 6rem);
+  line-height: 1;
+  font-weight: 700;
+  color: #fb8500;
+  text-shadow: 0 4px 20px rgba(251, 133, 0, 0.4);
+  margin: 0;
+}
+
+.not-found h1 {
+  margin: 0;
+}
+
+.not-found__text {
+  margin: 0;
+  max-width: 38ch;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.not-found__button {
+  margin-top: 0.8rem;
+  background: #fb8500;
+  color: #0f0f0f;
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.not-found__button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 22px rgba(251, 133, 0, 0.35);
+}
