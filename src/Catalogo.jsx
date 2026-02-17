@@ -1,22 +1,41 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import {Link} from "react-router-dom"
 import './catalogo.css'
 import {traerProductos} from './servicios/prodcto'
+import spinner from './assets/spinner.gif'
 
 
 const Catalogo = () => {
-    const product = traerProductos()
-  // const imgUrl = 'https://closed-stirring-ermine.glitch.me/'
-  //  const { loading, data, error } = useFetch("https://closed-stirring-ermine.glitch.me/catalogo", {}, [])
-     
-   //     if (error){
-   //         console.error(error)
-   //     }
-   //     if (loading) {
-   //         return <div className="spinner">
-   //             <img src={spinner} alt=""/>
-   //         </div>
-   //     }
+    const [product, setProduct] = useState([])
+    const [loading, setLoading] = useState(true)
+
+    useEffect(() => {
+      let isMounted = true
+
+      const cargarProductos = async () => {
+        setLoading(true)
+        const productos = await Promise.resolve(traerProductos())
+
+        if (isMounted) {
+          setProduct(productos)
+          setLoading(false)
+        }
+      }
+
+      cargarProductos()
+
+      return () => {
+        isMounted = false
+      }
+    }, [])
+
+    if (loading) {
+      return (
+        <div className="spinner">
+          <img src={spinner} alt="Cargando productos" />
+        </div>
+      )
+    }
     
      return (
     <div className="sectionC">
@@ -25,7 +44,7 @@ const Catalogo = () => {
         
         {product.map(producto => { 
             return (
-                    <div className="product">
+                    <div className="product" key={producto.id}>
                         <h3>{producto.name_p}</h3>
                         <img className="pdec" alt="producto" src={producto.route} />
                         <p style={{color: "white", marginBottom: 6}}>${producto.price}</p>

@@ -14,6 +14,12 @@
     justify-content: center;
     align-items: center;
     justify-items: center;
+    min-height: 60vh;
+  }
+
+  .spinner img {
+    width: 90px;
+    height: 90px;
   }
   .neon {
      color: #ffffff;
