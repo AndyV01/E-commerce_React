@@ -3,8 +3,8 @@ import './blog.css'
 import logo1 from './assets/medical-recreational-cover.jpg'
 import logo2 from './assets/baner.jpg'
 import logo3 from './assets/baner 2.jpg'
-import Carrousel from './COMPONENTES/Carrousel'
-import Noticias from './COMPONENTES/Noticias'
+import Carrousel from './COMPONENTES/Carrousel.jsx'
+import Noticias from './COMPONENTES/Noticias.jsx'
 
 const Blog = () => {
     return (

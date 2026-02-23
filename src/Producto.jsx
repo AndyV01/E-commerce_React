@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router'
-import FormCompra from './COMPONENTES/formOrdenDeCompra'
-import { traerProductos } from './servicios/prodcto'
+import FormCompra from './COMPONENTES/formOrdenDeCompra.jsx'
+import { traerProductos } from './servicios/prodcto.js'
 import spinner from './assets/spinner.gif'
 
 import './producto.css'

@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from '../assets/Logotransparente.png'
-import FormSuscribe from "./formSuscribe"
+import FormSuscribe from "./formSuscribe.jsx"
  
 const Footer = () => {
    

@@ -1,6 +1,6 @@
 import React from "react"
 import useFetch from "use-http"
-import { todasLasNoticias } from '../servicios/noticias'
+import { todasLasNoticias } from '../servicios/noticias.js'
 
 const Noticias = ()  => {
     const laNoticia = todasLasNoticias()

@@ -2,7 +2,7 @@ import React from 'react'
 import fondo1 from './assets/17631.jpg'
 import fondo2 from './assets/descarga.jfif'
 import fondo3 from './assets/FOTO-4_web.jpg'
-import Card from './COMPONENTES/CardHome'
+import Card from './COMPONENTES/CardHome.jsx'
 
  
 const ContainerCards = () => {

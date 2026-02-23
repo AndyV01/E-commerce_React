@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import {Link} from "react-router-dom"
 import './catalogo.css'
-import {traerProductos} from './servicios/prodcto'
+import {traerProductos} from './servicios/prodcto.js'
 import spinner from './assets/spinner.gif'
 
 

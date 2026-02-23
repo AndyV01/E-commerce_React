@@ -2,7 +2,7 @@ import React from 'react'
 import { useForm } from 'react-hook-form';
 import useFetch from "use-http"
 import { useHistory, useParams } from 'react-router'
-import Button from './Button'
+import Button from './Button.jsx'
 
 const FormCompra = () => {
     const { id } = useParams()

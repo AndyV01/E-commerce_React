@@ -4,7 +4,7 @@ import { useHistory } from 'react-router-dom'
 import user from '../assets/villain.png'
 import whats from '../assets/whatsapp.png'
 import menuMovile from '../assets/menu.png'
-import Nav from './nav'
+import Nav from './nav.jsx'
  
 const Iconos = () => {
     const history = useHistory()

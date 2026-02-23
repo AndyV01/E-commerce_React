@@ -1,11 +1,11 @@
 import React from "react"
 import { useParams } from 'react-router'
-import Carrousel from './Carrousel'
-import Noticias from './Noticias'
+import Carrousel from './Carrousel.jsx'
+import Noticias from './Noticias.jsx'
 import baner from '../assets/baner 2.jpg'
 import useFetch from "use-http"
 import spinner from "../assets/spinner.gif"
-import { todasLasNoticias } from '../servicios/noticias'
+import { todasLasNoticias } from '../servicios/noticias.js'
 
 
 const NoticiasInfo = ()  => {
