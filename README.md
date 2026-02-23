@@ -87,6 +87,19 @@ Este proyecto incluye pipeline de **Integración Continua y Despliegue Continuo*
 3. Build de producción (`npm run build`)
 4. Deploy automático (GitHub Pages)
 
+### Netlify (estabilidad de instalación)
+
+Se agregó configuración explícita para evitar errores de instalación de dependencias en Netlify (ej: `FETCH_ERROR` asociado a caché/peer deps de TypeScript):
+
+- Archivo `netlify.toml` con:
+  - Node `18`
+  - limpieza de caché npm
+  - instalación con `--legacy-peer-deps`
+  - build de producción
+- Archivo `.npmrc` con flags de instalación consistentes con CI.
+
+Si Netlify vuelve a fallar por caché, ejecutar **"Clear cache and deploy site"** desde el panel del proyecto.
+
 ---
 
 ## 🧩 Backend relacionado
