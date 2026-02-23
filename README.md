@@ -1,11 +1,13 @@
 <div align="center">
 
+[![Deploy Status · Netlify](https://img.shields.io/badge/Netlify-Deployed-00C7B7?logo=netlify&logoColor=white)](https://kushteenuy.netlify.app/)
+![CI/CD · GitHub Actions](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-2088FF?logo=githubactions&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+![Node.js](https://img.shields.io/badge/Node.js-339933?logo=node.js&logoColor=white)
+
 # 🛍️ KushTeenUy · E-commerce Frontend
 
-[![Deploy · Netlify](https://img.shields.io/badge/Deploy-Netlify-00C7B7?logo=netlify&logoColor=white)](https://kushteenuy.netlify.app/)
-![CI · GitHub Actions](https://img.shields.io/badge/CI-GitHub%20Actions-2088FF?logo=githubactions&logoColor=white)
-![CD · Automated](https://img.shields.io/badge/CD-Automated%20Deploy-4CAF50?logo=vercel&logoColor=white)
-![React](https://img.shields.io/badge/React-17-61DAFB?logo=react&logoColor=black)
 ![License](https://img.shields.io/badge/Status-Legacy%20Project-F39C12)
 
 Frontend e-commerce app enfocada en **catálogo de productos**, **contenido de blog/noticias**, **suscripciones** y experiencia responsive mobile-first.
