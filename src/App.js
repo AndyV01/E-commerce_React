@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Widget, addResponseMessage } from 'react-chat-widget';
 import 'react-chat-widget/lib/styles.css';
 
@@ -28,7 +28,23 @@ import NotFound from './COMPONENTES/NotFound'
 
 
 function App() {
+  const [theme, setTheme] = useState('light')
   const witToken = process.env.REACT_APP_WIT_TOKEN;
+
+  useEffect(() => {
+    const storedTheme = localStorage.getItem('theme')
+    if (storedTheme === 'dark' || storedTheme === 'light') {
+      setTheme(storedTheme)
+    }
+  }, [])
+
+  useEffect(() => {
+    localStorage.setItem('theme', theme)
+  }, [theme])
+
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'))
+  }
 
   const handleNewUserMessage = async (newMessage) => {
     try {
@@ -67,11 +83,11 @@ function App() {
 
   return (
     <Router>
-      <body className="stars">
+      <body className="stars" data-theme={theme}>
         <header>
           <div>
             <img src={logo} className="logo" alt="logo" />
-            <Nav />
+            <Nav theme={theme} onToggleTheme={toggleTheme} />
           </div>
           <img src={baner} className="baner" alt="logo" />
         </header>

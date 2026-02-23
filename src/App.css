@@ -16,8 +16,8 @@ body {
   grid-template-columns: 1fr 2fr 2fr 2fr;
   grid-template-rows: 2fr 6fr 3fr;
   gap: 10px ;
-  background-color: black;
-  background-image: url(./assets/stars.png);
+  background-color: var(--bg-color);
+  background-image: linear-gradient(rgba(0, 0, 0, var(--bg-image-opacity)), rgba(0, 0, 0, var(--bg-image-opacity))), url(./assets/stars.png);
   
 }
 .rcw-avatar {
@@ -84,17 +84,34 @@ header > div {
   
 }
 .nav-button {
-  background-color: rgba(127, 255, 212, 0.226);
+  background-color: var(--navbar-surface);
   border-radius: 5px;
-  color: white;
+  color: var(--text-color);
   text-decoration: transparent;
   cursor: pointer;
   padding: 3px;
 }
+
+
 nav > ul {
   display: grid;
-  grid-template-columns: repeat(3, auto);
+  grid-template-columns: repeat(4, auto);
   gap: 20px;
+  align-items: center;
+}
+
+.theme-toggle {
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: var(--navbar-surface);
+  color: var(--text-color);
+  border-radius: 999px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.theme-toggle:hover {
+  transform: translateY(-1px);
 }
 
 nav a:hover {
@@ -160,10 +177,11 @@ span:hover > .login {
   z-index: 2;
 }
 main {
+  color: var(--text-color);
   display: grid;
   grid-column: span 4;
   grid-row: 2;
-  background-color: rgba(252, 48, 208, 0.178);
+  background-color: var(--main-surface);
   border-radius: 20px;
   grid-template-columns: 3fr 1fr;
   
@@ -230,7 +248,7 @@ main {
 
 .card__back {
   transform: rotateY(180deg);
-  background-image: url(./assets/13834732743_002376e2bf_b.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.42)), url(./assets/13834732743_002376e2bf_b.jpg);
   background-position: center;
   background-size: cover;
 }
@@ -243,7 +261,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: var(--text-color);
 }
 
 .bg {
@@ -304,10 +322,10 @@ footer {
   display: grid;
   grid-column: span 4;
   grid-row: 3;
-  background-color: rgba(250, 79, 241, 0.123);
+  background-color: var(--footer-surface);
   border-radius: 20px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  color: white;
+  color: var(--text-color);
 }
 footer div {
   display: grid;
@@ -326,8 +344,8 @@ footer p {
   text-align: center;
 }
 h3 {
-  border-bottom: 1px solid white;
-  color: rgb(182, 170, 170);
+  border-bottom: 1px solid var(--text-color);
+  color: var(--muted-text-color);
   margin: 15px 0px;
 }
 .button {
@@ -335,8 +353,8 @@ h3 {
   margin-bottom: 15px;
   margin-top: 10px;
   height: 80%;
-  color:rgb(137, 54, 119);
-  background: #d0d0d089;
+  color: var(--input-text);
+  background: var(--input-bg);
   border: none;
   font-size: 15px;
   width: 200px;
@@ -353,6 +371,8 @@ form {
 }
 .input {
   margin: 3px;
+  background: var(--input-bg);
+  color: var(--input-text);
   padding: 3px 10px;
   height: 90%;
   width: 200px;
@@ -378,7 +398,7 @@ li:hover {
   transition-duration: 300ms;
 }
 footer a {
-  color: white;
+  color: var(--text-color);
   text-decoration: transparent;
   justify-items: center;
   text-align: center;
@@ -387,7 +407,7 @@ footer a {
   transition-duration: 300ms;
 }
  footer a:hover {
-  color: rgb(247, 108, 247);
+  color: var(--link-hover-color);
 }
 button:hover {
   background: #ff96ad;
@@ -478,7 +498,8 @@ button:hover {
     transform: scaleY(1);
   }
   nav > ul {
-    grid-template-columns: none;
+    grid-template-columns: 1fr;
+    gap: 8px;
   }
   .nav-button{
     text-align: center;

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom"
 
-const Nav = () => {
+const Nav = ({ theme, onToggleTheme }) => {
     return (
         <nav>
         <ul>
@@ -14,6 +14,14 @@ const Nav = () => {
             <Link  className="nav-button" to="/Blog" > 
                  BLOG
             </Link>
+            <button
+              type="button"
+              className="theme-toggle"
+              onClick={onToggleTheme}
+              aria-label={`Cambiar a tema ${theme === 'light' ? 'oscuro' : 'claro'}`}
+            >
+              {theme === 'light' ? '🌙 Oscuro' : '☀️ Claro'}
+            </button>
         </ul>
         </nav>
     )

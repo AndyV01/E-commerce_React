@@ -22,7 +22,7 @@
     height: 90px;
   }
   .neon {
-     color: #ffffff;
+     color: var(--text-color);
      text-shadow: 0 0 8px #2cd0f0, 0 0 2px #2cd0f0, 0 0 10px #2cd0f0,
        0 0 6px #2cd0f0, 0 0 20px #2cd0f0, 0 0 20px #2cd0f0, 0 0 1px #2cd0f0,
        0 0 12px #2cd0f0;
@@ -56,7 +56,7 @@
   .product {
     width: 220px;
     height: 300px;
-    background-color: rgba(127, 255, 212, 0.281);
+    background-color: var(--card-surface);
     border-radius: 20px;
     text-align: center;
   }
@@ -65,7 +65,7 @@
     font-size: 16px;
     cursor: pointer;
     border: none;
-    color: white;
+    color: var(--text-color);
     background: #ff96ad !important;
     box-shadow: 0 0 5px #ff96ad, 0 0 25px #ff96ad, 0 0 50px #ff96ad,
       0 0 200px #ff96ad !important;

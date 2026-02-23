@@ -6,7 +6,7 @@
   justify-content: center;
   text-align: center;
   gap: 0.8rem;
-  color: #ffffff;
+  color: var(--text-color);
   padding: 2rem 1rem;
 }
 
@@ -26,7 +26,7 @@
 .not-found__text {
   margin: 0;
   max-width: 38ch;
-  color: rgba(255, 255, 255, 0.86);
+  color: var(--muted-text-color);
 }
 
 .not-found__button {

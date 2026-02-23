@@ -47,7 +47,7 @@ const Catalogo = () => {
                     <div className="product" key={producto.id}>
                         <h3>{producto.name_p}</h3>
                         <img className="pdec" alt="producto" src={producto.route} />
-                        <p style={{color: "white", marginBottom: 6}}>${producto.price}</p>
+                        <p style={{ color: "var(--text-color)", marginBottom: 6 }}>${producto.price}</p>
                         <Link className="buttonC" to= {`/producto/${producto.id}`}>VER MAS</Link>
                     </div>
             )}    

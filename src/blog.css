@@ -27,7 +27,7 @@
     margin: 20px;
   }
   h1 {
-    color: white;
+    color: var(--text-color);
     margin: 30px 0px;
   }
      
@@ -39,16 +39,16 @@
   }
 
   aside a:hover{
-    color: #fff;
+    color: var(--text-color);
   }
   aside a {
-    color: rgb(255, 0, 242);
+    color: var(--link-color);
     text-decoration: none;
     font-size: 0.8em;
   }
  
   .newLink {
-    background-color: rgba(127, 255, 212, 0.281);
+    background-color: var(--card-surface);
     border-radius: 20px;
     height: 40px;
     width: 80%;
@@ -59,13 +59,13 @@
     align-items: center;
   }
   .pp{
-    color: #fff;
+    color: var(--text-color);
     margin-bottom: 20px;
   
   }
   
   .neon {
-    color: #ffffff;
+    color: var(--text-color);
     text-shadow: 0 0 8px #2cd0f0, 0 0 2px #2cd0f0, 0 0 10px #2cd0f0,
       0 0 6px #2cd0f0, 0 0 20px #2cd0f0, 0 0 20px #2cd0f0, 0 0 1px #2cd0f0,
       0 0 12px #2cd0f0;
