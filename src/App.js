@@ -28,7 +28,7 @@ import NotFound from './COMPONENTES/NotFound'
 
 
 function App() {
-  const witToken = process.env.REACT_APP_WIT_TOKEN;
+  const witToken = import.meta.env.VITE_WIT_TOKEN;
 
   const handleNewUserMessage = async (newMessage) => {
     try {
